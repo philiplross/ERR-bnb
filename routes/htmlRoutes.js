@@ -24,11 +24,15 @@ var viewObject = {
 
 
 
-  // Load example page and pass in an example by id
+  // loading our rental listing that was selected for listing page
   app.get("/listing/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
       res.render("listing", {
-        // example: dbExample
+        title: title,
+        budget: budget,
+        dates: dates,
+        details: details
+
       });
     });
   });
