@@ -3,7 +3,7 @@ var questions = {
 }
 
 var budget
-    = alert(
+    = alert()
 // entering in a value from $1 to $10,000= id value capture for the box then attaching a value to it
 
 var questionOne
@@ -36,6 +36,19 @@ var questionSix
 
 var questionSeven
     = alert("");
+
+var questionEight =
+console.log("are you a big sports fan and would see a local game?")
+
+
+var questionNine =
+console.log("if you were able to endulge would you rather drink a nice cocktail, or smoke a smooth rolled joint?")
+// San fran and denver for smoking, new york and chicago on drinking
+
+
+var questionTen =
+console.log("to be determined")
+
 
 
 module.exports = questions;
