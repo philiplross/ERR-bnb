@@ -35,7 +35,7 @@ var questionSix
 
 
 var questionSeven
-    = alert("");
+    = console.log("to be determined");
 
 var questionEight =
 console.log("are you a big sports fan and would see a local game?")
