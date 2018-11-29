@@ -15,7 +15,16 @@ module.exports = function (app) {
   app.get("/survey", function (req, res) {
     db.Example.findAll({}).then(function (dbExamples) {
       var viewObject = {
-        questions: questionOne, questionTwo, questionThree, questionFour, questionFive,
+        questions: questionOne,
+         questionTwo,
+          questionThree,
+           questionFour,
+           questionFive,
+            questionSix,
+            questionSeven,
+             questionEight,
+             questionNine,
+              questionTen
       }
       res.render("survey", viewObject);
     });
