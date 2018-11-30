@@ -31,7 +31,7 @@ VALUES ( 7, 'When treveling wich if the folling intrest you?', NULL)
 
 
 INSERT INTO questions (questionID, question, users_answer)
-VALUES ( 8, '', NULL)
+VALUES ( 8, 'How amny people are you bringing on this trip or is it just Yourself?', NULL)
 
 INSERT INTO questions (questionID, question, users_answer)
 VALUES ( 9, '', NULL)
