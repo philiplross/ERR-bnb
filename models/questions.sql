@@ -34,10 +34,12 @@ INSERT INTO questions (questionID, question, users_answer)
 VALUES ( 8, 'How amny people are you bringing on this trip or is it just Yourself?', NULL)
 
 INSERT INTO questions (questionID, question, users_answer)
-VALUES ( 9, '', NULL)
+VALUES ( 9, 'What dates are you planning to travel?', NULL)
 
 INSERT INTO questions (questionID, question, users_answer)
-VALUES ( 10, '', NULL)
+VALUES ( 10, 'What is inportant to have close by in your neighborhood experience?', NULL)
+-- have defining multtiple check boxes for the fooling to better filter down the neiborhood with each area have values to corilate with
+-- Be trendy and hip / Have ethic grocery stores / Skate park nearby / a lot open 24 hours / Beach is nearby / good Sushi near by / Good mexican food near by / good for taking public transit / ect.
 
 
 
