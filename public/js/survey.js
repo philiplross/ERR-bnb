@@ -1,17 +1,15 @@
-var questionsSurvey = ["What is your budget for this trip?",
- "Do you like staying alone, or enjoy the livelyness of a bed and breakfast?",
- "Would you rather wake up to the sights of the ocean or not a deal breaker?",
-"when traveleing somewhere, whats the first thing you do when you get there?",
-"Would you say this trip you wanna be a foodie, or stick to a diet and get some excerise?",
-"when you stay somewhere whats more inportant, artistic & history, or comnfort & ritz?",
-"How amny people are you bringing on this trip or is it just Yourself?",
+var questionsSurvey = ["What is your budget for this trip?", check
+ "Do you like staying alone, or enjoy the livelyness of a bed and breakfast?", 
+ "Would you rather wake up to the sights of the ocean or not a deal breaker?", 
+"when traveleing somewhere, whats the first thing you do when you get there?", 
+"Would you say this trip you wanna be a foodie, or stick to a diet and get some excerise?", 
+"when you stay somewhere whats more important, artistic & history, or comnfort & ritz?", 
+"'when traveleing somewhere, whats the first thing you do when you get there?" 
+"How amny people are you bringing on this trip or is it just Yourself?", 
+"How amny people are you bringing on this trip or is it just Yourself?" 
 "What dates are you planning to travel?",
 "What is inportant to have close by in your neighborhood experience?"
 ];
-
-
-
-
 
 
 

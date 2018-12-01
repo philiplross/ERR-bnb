@@ -1,17 +1,27 @@
 <div id="survey">
   <div class="container">
     <div class="row">
+      <h5>Questions</h5>
       <div class="col-8 offset-2">
-        {{question.one}}
-        {{question.two}}
-        {{question.three}}
-        {{question.four}}
-        {{question.five}}
-        {{question.six}}
-        {{question.seven}}
-        {{question.eight}}
-        {{question.nine}}
-        {{question.ten}}
+        <form class="form-group">
+        {{#each questions}}
+        
+          <p>  {{this.question}} <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Blank1</label>
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Blank2</label>
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Blank3</label>
+
+</div></p>
+
+
+
+
+         
+        {{/each}}
+       </form>
       </div>
     </div>
   </div>

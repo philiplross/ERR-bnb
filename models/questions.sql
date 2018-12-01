@@ -23,7 +23,7 @@ INSERT INTO questions (questionID, question, users_answer)
 VALUES ( 5, 'Would you say this trip you wanna be a foodie, or stick to a diet and get some excerise?', NULL)
 
 INSERT INTO questions (questionID, question, users_answer)
-VALUES ( 6, 'when you stay somewhere whats more inportant, artistic & history, or comnfort & ritz?', NULL)
+VALUES ( 6, 'when you stay somewhere whats more important, artistic & history, or comnfort & ritz?', NULL)
 
 INSERT INTO questions (questionID, question, users_answer)
 VALUES ( 7, 'When treveling wich if the folling intrest you?', NULL)

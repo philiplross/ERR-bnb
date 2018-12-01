@@ -1,5 +1,5 @@
 var db = require("../models");
-var questions = require("../")
+var questions = require("../test-data/questions")
 
 module.exports = function (app) {
   // Load index page
@@ -13,22 +13,15 @@ module.exports = function (app) {
   // });
 
   app.get("/survey", function (req, res) {
-    db.questions.findAll({}).then(function (dbExamples) {
-      var viewObject = { questions
-        // questions: questionOne,
-        //  questionTwo,
-        //   questionThree,
-        //    questionFour,
-        //    questionFive,
-        //     questionSix,
-        //     questionSeven,
-        //      questionEight,
-        //      questionNine,
-        //       questionTen
-      }
-      res.render("survey", viewObject);
+    // db.questions.findAll({}).then(function (dbExamples) {
+      // var viewObject = { questions
+    
+
+    console.log("qs ", questions);
+      
+      res.render("survey", {"questions":questions});
     });
-  });
+
 
 
 
