@@ -4,7 +4,7 @@ CREATE DATABASE project_db1;
 
 use project_db1;
 
-CREATE TABLE syndicated (
+CREATE TABLE sandiego (
  id INT (100) NOT NULL,
  name VARCHAR(255) NULL,
  host_id INT (100) NOT NULL,
