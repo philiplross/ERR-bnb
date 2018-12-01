@@ -11,14 +11,7 @@ module.exports = function(app) {
   // Create a new example
   app.post("/api/survey", function(req, res) {
     db.questions.create(req.body).then(function(questions) {
-      res.json(dbExample);
+      res.json(questions);
     });
   });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
-};
+}

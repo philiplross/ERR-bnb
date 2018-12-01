@@ -1,6 +1,3 @@
-
-
-
 -- NEW QUESTION SYNTAX TABLE and new SAN DIEGO based questions
 
 use project_db1;

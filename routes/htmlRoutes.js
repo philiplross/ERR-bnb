@@ -1,5 +1,4 @@
 var db = require("../models");
-var questions = require("../")
 
 module.exports = function (app) {
   // Load index page
@@ -11,10 +10,19 @@ module.exports = function (app) {
   //     });
   //   });
   // });
+  app.get("/", (req, res, next) => {
+    db.questions.findAll({}).then(questionFoundFromDb => {
+      res.render("index", {
+        questions: questionFoundFromDb,
+        props:["1,2,3",{name: "yolo"}]
+      })
+    }).catch(next)
+  })
 
   app.get("/survey", function (req, res) {
     db.questions.findAll({}).then(function (dbExamples) {
-      var viewObject = { questions
+      var viewObject = {
+        questions
         // questions: questionOne,
         //  questionTwo,
         //   questionThree,
@@ -33,9 +41,14 @@ module.exports = function (app) {
 
 
 
+
   // Load example page and pass in an example by id
   app.get("/listing/:id", function (req, res) {
-    db.questions.findOne({ where: { id: req.params.id } }).then(function (questions) {
+    db.questions.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(function (questions) {
       res.render("listing", {
         // example: dbExample
       });
@@ -46,4 +59,8 @@ module.exports = function (app) {
   app.get("*", function (req, res) {
     res.render("404");
   });
+
+  app.use((err, req, res, next) => {
+    console.log(err)
+  })
 };

@@ -4,7 +4,7 @@ CREATE DATABASE project_db1;
 
 use project_db1;
 
-CREATE TABLE sandiego (
+CREATE TABLE IF NOT EXISTS sandiego (
  id INT (100) NOT NULL,
  name VARCHAR(255) NULL,
  host_id INT (100) NOT NULL,
@@ -20,3 +20,12 @@ CREATE TABLE sandiego (
 
  PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS questions (
+ id INT (100) NOT NULL AUTO_INCREMENT,
+ text VARCHAR(255) NULL,
+ answer VARCHAR (255) NOT NULL,
+ choices VARCHAR (255) NOT NULL,
+ PRIMARY KEY (id)
+);
+
