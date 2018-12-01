@@ -1,96 +1,30 @@
 <div id="survey">
   <div class="container">
     <div class="row">
+      <h5>Questions</h5>
       <div class="col-8 offset-2">
+        <form class="form-group">
+        {{#each questions}}
+        
+          <p>  {{this.question}} <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Blank1</label>
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio1">Blank2</label>
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio1">Blank3</label>
 
-
- <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">What is your total budget for this trip?</label>
-            <input type="numbers" id="example-text" class="form-control" aria-describedby="example-text" placeholder="$1-$10000">
-          </div>
-
-           <div class="form-group">
-            <label for="example-text">Question 2</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="">
-          </div>
-
-          <div class="form-group">
-            <label for="example-text">Question 3</label>
-              <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="">
-          </div>
-
-          <div class="form-group">
-            <label for="example-text">Question 4</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="">
-          </div>
-
-          <div class="form-check">
-            <h4>What are some of your favorite things to do when traveling?</h4>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Swimming
-            </label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Shopping
-            </label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Hiking
-            </label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Eating
-            </label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Sight Seeing
-            </label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Camping
-            </label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Gambling
-            </label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Event going
-            </label>
-          </div>
-
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-
-
-
-        <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
+</div></p>
 
 
 
 
-        {{!-- <div class="form-group">
-          <label for="example-description">Example Description</label>
-          <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-        </div> --}}
-
-        {{!-- <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul> --}}
-
-
-
-          
+         
+        {{/each}}
+       </form>
       </div>
+                      <button type="button" class="btn btn-primary btn-lg">Submit to see where you are going</button>
+
     </div>
   </div>
 </div>
