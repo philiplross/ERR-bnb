@@ -1,16 +1,18 @@
 {
   "development": {
     "username": "root",
-    "password": "Djcorgi02",
+    "password": "DJcorgi02",
     "database": "project_db1",
-    "host": "localhost:3306",
+    "host": "localhost",
+    "port":3306,
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "DJcorgi02",
     "database": "project_db1",
-    "host": "localhost:3306",
+    "host": "localhost",
+    "port":3306,
     "dialect": "mysql",
     "logging": false
   },
