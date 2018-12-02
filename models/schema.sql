@@ -29,3 +29,13 @@ CREATE TABLE IF NOT EXISTS questions (
  PRIMARY KEY (id)
 );
 
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + ete?",3);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
+INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
