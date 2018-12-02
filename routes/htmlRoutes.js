@@ -14,34 +14,24 @@ module.exports = function (app) {
     db.questions.findAll({}).then(questionFoundFromDb => {
       res.render("index", {
         questions: questionFoundFromDb,
-        props:["1,2,3",{name: "yolo"}]
+        props: ["1,2,3", {
+          name: "yolo"
+        }]
       })
     }).catch(next)
   })
 
   app.get("/survey", function (req, res) {
-    db.questions.findAll({}).then(function (dbExamples) {
+    db.questions.findAll({}).then(function (questions) {
       var viewObject = {
-        questions
-        // questions: questionOne,
-        //  questionTwo,
-        //   questionThree,
-        //    questionFour,
-        //    questionFive,
-        //     questionSix,
-        //     questionSeven,
-        //      questionEight,
-        //      questionNine,
-        //       questionTen
+        viewData: {
+          questions,
+          testArr: JSON.parse(`["Entire house/apt", "Shared room", "Private room"]`)
+        }
       }
       res.render("survey", viewObject);
     });
   });
-
-
-
-
-
   // Load example page and pass in an example by id
   app.get("/listing/:id", function (req, res) {
     db.questions.findOne({

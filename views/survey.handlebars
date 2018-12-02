@@ -1,21 +1,12 @@
-<div id="survey">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        {{question.one}}
-        {{question.two}}
-        {{question.three}}
-        {{question.four}}
-        {{question.five}}
-        {{question.six}}
-        {{question.seven}}
-        {{question.eight}}
-        {{question.nine}}
-        {{question.ten}}
-      </div>
-    </div>
+<div class="container" id="survey">
+  {{#each viewData.questions}}
+  <div class="col-8 offset-2">
+    <h3>{{this.text}}</h3>
+    <select name="dwelling" id="answers">
+      {{#each viewData.testArr}}
+        <option value={{this}}>{{this}}</option>
+       {{/each}}
+    </select>
   </div>
-</div>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+  {{/each}}
+  </div>

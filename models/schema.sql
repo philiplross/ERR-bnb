@@ -24,18 +24,20 @@ CREATE TABLE IF NOT EXISTS sandiego (
 CREATE TABLE IF NOT EXISTS questions (
  id INT (100) NOT NULL AUTO_INCREMENT,
  text VARCHAR(255) NULL,
- answer VARCHAR (255) NOT NULL,
- choices VARCHAR (255) NOT NULL,
+ createdAt DATETIME,
+ updatedAt DATETIME,
  PRIMARY KEY (id)
 );
-
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + ete?",3);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 34?",5);
-INSERT INTO questions (text, choices) VALUES ("what is 1 + 1?",3);
+/*below the options for dwelling type are: shared room, private room, or entire home/apt*/
+INSERT INTO questions (text) VALUES ("please choose the type of dwelling you'd like to stay in");
+/*below choose the price point; box plot to figure averages to come*/
+INSERT INTO questions (text) VALUES ("what is your price range?");
+/*below questions based on neighborhood type... 95 neighborhoods in db*/ 
+INSERT INTO questions (text) VALUES ("what would you like to do while you're in town?");
+INSERT INTO questions (text) VALUES ("where would you like to eat?");
+INSERT INTO questions (text) VALUES ("would you like to be by the beach?");
+INSERT INTO questions (text) VALUES ("would you like to go for fun?");
+INSERT INTO questions (text) VALUES ("another question?");
+INSERT INTO questions (text) VALUES ("another question?");
+INSERT INTO questions (text) VALUES ("another question?");
+INSERT INTO questions (text) VALUES ("another question?");
