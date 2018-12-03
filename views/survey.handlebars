@@ -6,15 +6,27 @@
         <form class="form-group">
         {{#each questions}}
         
-          <p>  {{this.question}} <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">Blank1</label>
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio1">Blank2</label>
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-  <label class="form-check-label" for="inlineRadio1">Blank3</label>
+         
+         <div class = "container">
+   
+    <form method="get">
+        <br>
+        {{this.question}}
+        <select name="motivation" id="answers">
+            <option value="friend">More friends = more parties!</option>
+            <option value="novelty">It was this or download a new app to try</option>
+            <option value="peerPressure">Only the cool people take surveys for compatibility</option>
+            <option value="confusion">I thought this was a new promo for free pizza</option>
+        </select>
 
-</div></p>
+ <select name="motivation" id="answers">
+            <option value="friend">More hdghdfhdfhdfh = more parties!</option>
+            <option value="novelty">It was thdhdfhdfhdfhis or download a new app to try</option>
+            <option value="peerPressure">Only thedfhdfhdfh cool people take surveys for compatibility</option>
+            <option value="confusion">I thought dfhfdhdfhfdh was a new promo for free pizza</option>
+        </select>
+
+        
 
 
 
