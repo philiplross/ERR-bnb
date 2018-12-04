@@ -1,12 +1,13 @@
 <div class="container" id="survey">
-  {{#each viewData.questions}}
-  <div class="col-8 offset-2">
+  {{#each questions}}
+  <div class="col-8 offset-2 questions">
     <h3>{{this.text}}</h3>
     <select name="dwelling" id="answers">
-      {{#each viewData.testArr}}
-        <option value={{this}}>{{this}}</option>
-       {{/each}}
+      {{#each this.choices}}
+      <option value={{this}}>{{this}}</option>
+      {{/each}}
     </select>
   </div>
   {{/each}}
-  </div>
+  <button class= "questionContainer"> Yay button!</button>
+</div>

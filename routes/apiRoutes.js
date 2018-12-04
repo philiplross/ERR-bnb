@@ -14,4 +14,8 @@ module.exports = function (app) {
       res.json(questions);
     });
   });
+
+  app.post("/api/results",(req, res, next) =>{
+    return res.json(req.body)
+  })
 }

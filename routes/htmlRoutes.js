@@ -1,56 +1,33 @@
 var db = require("../models");
 
 module.exports = function (app) {
-  // Load index page
-  // app.get("/", function (req, res) {
-  //   db.Example.findAll({}).then(function (dbExamples) {
-  //     res.render("index", {
-  //       msg: "Welcome to ERR bnb!",
-  //       examples: dbExamples
-  //     });
-  //   });
-  // });
-  app.get("/", (req, res, next) => {
-    db.questions.findAll({}).then(questionFoundFromDb => {
-      res.render("index", {
-        questions: questionFoundFromDb,
-        props: ["1,2,3", {
-          name: "yolo"
-        }]
-      })
-    }).catch(next)
-  })
 
   app.get("/survey", function (req, res) {
-    db.questions.findAll({}).then(function (questions) {
-      var viewObject = {
-        viewData: {
-          questions,
-          testArr: JSON.parse(`["Entire house/apt", "Shared room", "Private room"]`)
-        }
-      }
-      res.render("survey", viewObject);
-    });
-  });
-  // Load example page and pass in an example by id
-  app.get("/listing/:id", function (req, res) {
-    db.questions.findOne({
-      where: {
-        id: req.params.id
-      }
-    }).then(function (questions) {
-      res.render("listing", {
-        // example: dbExample
-      });
-    });
-  });
+    var viewObject = {
+      questions: [
+        {
+          text: "please choose the type of dwelling you would like to stay in",
+          choices: JSON.parse("[\"Entire-home/apt\", \"Private room\", \"Shared room\"]")
+        },
+        {
+          text: "What type of neighborhood would you like to stay in?",
+          choices: JSON.parse("[\"by_the_beach\", \"downtown/city\", \"Suburban_ and_Safe\"]")
+        },
+        {
+          text: "What is your price point",
+          choices: JSON.parse("[\"Under_100\", \"Under_200\", \"Under_300\",\"any\"]")
+        },
 
-  // Render 404 page for any unmatched routes
-  app.get("*", function (req, res) {
-    res.render("404");
+      ],
+    }
+    res.render("survey", viewObject);
   });
+     app.get("*", function (req, res) {
+     res.render("404");
+     });
+  
+   app.use((err, req, res, next) => {
+       console.log(err)
+   })
 
-  app.use((err, req, res, next) => {
-    console.log(err)
-  })
-};
+  }
