@@ -1,16 +1,75 @@
 <div id="home">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-8 offset-2">
+            <div class="col-12">
 
-                <h1>{{listing.title}}</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Title Listing</h1>
+    <p class="lead">Lisitng Description</p>
+  </div>
+</div>
+
+<br>
+
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Budget</h2>
+      <h3 class="card-text">$158.36</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Dates</h2>
+      <h3 class="card-text">December 25th-January 2nd</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Neighborhood</h2>
+      <h3 class="card-text">Kearny Mesa</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div><br>
+
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Rating</h2>
+      <h3 class="card-text">$158.36</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Roomate Type</h2>
+      <h3 class="card-text">Entire House</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Last Review</h2>
+      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum culpa illo dicta repudiandae voluptatem totam dolor velit, incidunt voluptas ipsum, alias, quo asperiores obcaecati. Velit ipsam dolore iusto officia illo!</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div>
+
+
+
+                {{!-- <h1>Listing Title</h1>
                 <br>
                 <h4>{{listing.budget}}</h4>
                 <h4>{{listing.dates}}</h4>
 
                 <ul>
                     <li>{{listing.details}}</li>
-                </ul>
+                </ul> --}}
 
                 <button type="button" class="btn btn-primary btn-lg" > <script>
 <script src="js/ajax.js"></script>
