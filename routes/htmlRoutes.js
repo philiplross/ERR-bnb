@@ -2,6 +2,10 @@ var db = require("../models");
 var questions = require("../test-data/questions");
 
 module.exports = function (app) {
+app.get("/survey", function (req, res){
+  res.render("/index")
+})
+
   app.get("/survey", function (req, res) {
     return res.render("survey")
   })

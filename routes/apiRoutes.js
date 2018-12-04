@@ -26,3 +26,10 @@ module.exports = function(app) {
   //   });
   // });
 };
+app.get("/api/lisiting", function(req, res) {
+
+  res.json({message: ""})
+  // db.Example.findAll({}).then(function(dbExamples) {
+  //   res.json(dbExamples);
+  // });
+});
