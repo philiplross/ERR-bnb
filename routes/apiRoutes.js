@@ -2,11 +2,11 @@ var db = require("../models");
 
 var testQuestions = require("../test-data/questions.js")
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Get all examples
-  app.get("/api/survey", function(req, res) {
+  app.get("/api/survey", function (req, res) {
 
-    res.json({message: "received", questions:testQuestions})
+    res.json({ message: "received", questions: testQuestions })
     // db.Example.findAll({}).then(function(dbExamples) {
     //   res.json(dbExamples);
     // });
@@ -25,11 +25,7 @@ module.exports = function(app) {
   //     res.json(dbExample);
   //   });
   // });
+  app.get("/api/lisiting", function (req, res) {
+    res.json({ message: "" })
+  })
 };
-app.get("/api/lisiting", function(req, res) {
-
-  res.json({message: ""})
-  // db.Example.findAll({}).then(function(dbExamples) {
-  //   res.json(dbExamples);
-  // });
-});
