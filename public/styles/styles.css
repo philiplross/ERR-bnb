@@ -1,3 +1,15 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+
+.btn.btn-primary a {
+  color: #FFF
+
+}
+.btn.btn-primary a:active {
+ color: #FFF
+
+
+  
+}
