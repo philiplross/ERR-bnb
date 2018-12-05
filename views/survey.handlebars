@@ -1,29 +1,37 @@
 <div id="survey">
   <div class="container">
     <div class="row">
-      <h5>Questions</h5>
       <div class="col-12">
-       
+       <h1 class="text-ceneter">Question:</h1>
         <form class="form-group">
-        {{#each questions}}
-         <h1 class="text ceneter">Question:!!!!!</h1>
-         
-         <div class = "container">
-  
-    <form method="get">
-        <br>
-        {{this.question}}
-<br>
+
+
+<h1 class="display-2">What is your budget for this trip?</h1>
+
 
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   <h3> Select Your Answer</h3>
+    Your Answer
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#">$100-$200</a>
+    <a class="dropdown-item" href="#">$200-$500</a>
+    <a class="dropdown-item" href="#">$500+</a>
   </div>
+</div>
+
+        {{#each questions}}
+         
+         
+         <div class = "container">
+  
+    
+      
+        {{this.question}}
+<br>
+
+
+
 </div>
         {{!-- following section of drop down answers to moved to handlebars backend
         <select name="motivation" id="answers">
