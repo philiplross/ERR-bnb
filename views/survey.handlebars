@@ -1,101 +1,304 @@
 <div id="survey">
   <div class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-       <h1 class="text-ceneter">Question:</h1>
-        <form class="form-group">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-ceneter">Question:</h1>
+          <form class="form-group">
 
 
-<h1 class="display-2">What is your budget for this trip?</h1>
-
-
-
-
-     Select Your Budget
-
-        <select name="motivation" id="answers">
-            <option value="friend">$100-$200</option>
-            <option value="novelty">$200-$500</option>
-            <option value="peerPressure">$500+</option>
-       </select>
-
-
-      <br> <br><hr><br><br>
-
-       <div class="container">
-    <div class="row">
-      <div class="col-12">
-       <h1 class="text-ceneter">Question:</h1>
-        <form class="form-group">
-
-
-<h1 class="display-2">"Do you like staying alone, or enjoy the livelyness of a bed and breakfast?</h1>
+            <h1 class="display-2">What is your budget for this trip?</h1>
 
 
 
 
-Select Your Answer
-        <select name="motivation" id="answers">
-            <option value="friend">do I, i live it!</option>
-            <option value="novelty">I hate sharing space withg stranger when im on vacation</option>
-            <option value="peerPressure">I'm indiferant, i dont mind either</option>
-       </select>
+            Select Your Budget
+
+            <select name="motivation" id="answers">
+              <option value="friend">$100-$200</option>
+              <option value="novelty">$200-$500</option>
+              <option value="peerPressure">$500+</option>
+            </select>
 
 
-       <br> <br><hr><br><br>
+            <br> <br>
+            <hr><br><br>
 
-       <div class="container">
-    <div class="row">
-      <div class="col-12">
-       <h1 class="text-ceneter">Question:</h1>
-        <form class="form-group">
-
-
-<h1 class="display-2">Would you rather wake up to the sights of the ocean or not a deal breaker?</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="text-ceneter">Question:</h1>
+                  <form class="form-group">
 
 
-
-
-Slect Answer        <select name="motivation" id="answers">
-            <option value="friend">I love the beach cant be further then a mile away!</option>
-            <option value="novelty">I hate water, not big deal</option>
-            <option value="peerPressure">I'm indiferant, i dont mind either</option>
-       </select>
-
-        {{#each questions}}
-         
-         
-         <div class = "container">
-  
-    
-      
-        {{this.question}}
-<br>
-
-
-
-</div>
-       
- 
-
-        
+                    <h1 class="display-2">"Do you like staying alone, or enjoy the livelyness of a bed and breakfast?</h1>
 
 
 
 
-         
-        {{/each}}
-       </form>
-      </div>
+                    Select Your Answer
+                    <select name="motivation" id="answers">
+                      <option value="friend">do I, i live it!</option>
+                      <option value="novelty">I hate sharing space withg stranger when im on vacation</option>
+                      <option value="peerPressure">I'm indiferant, i dont mind either</option>
+                    </select>
 
-                            {{!-- <button type="button" class="btn btn-primary btn-lg">Next Question</button> --}}
 
-                      <button type="button" class="btn btn-primary btn-lg text-ceneter"><a href="./listing">Submit to see where you are going</a></button>
+                    <br> <br>
+                    <hr><br><br>
 
-    </div>
-  </div>
-</div>
-</div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-ceneter">Question:</h1>
+                          <form class="form-group">
+
+
+                            <h1 class="display-2">Would you rather wake up to the sights of the ocean or not a deal
+                              breaker?</h1>
+
+
+
+
+                            Select Your Answer <select name="motivation" id="answers">
+                              <option value="friend">I love the beach cant be further then a mile away!</option>
+                              <option value="novelty">I hate water, not big deal</option>
+                              <option value="peerPressure">I'm indiferant, i dont mind either</option>
+                            </select>
+
+
+                            <br> <br>
+                            <hr><br><br>
+
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h1 class="text-ceneter">Question:</h1>
+                                  <form class="form-group">
+
+
+                                    <h1 class="display-2">when traveleing somewhere, whats the first thing you do when
+                                      you get there?</h1>
+
+
+
+
+                                    Select Your Answer <select name="motivation" id="answers">
+                                      <option value="friend">Get something yummy to eat</option>
+                                      <option value="novelty">Take a dip in the ocean</option>
+                                      <option value="peerPressure">Go shopping</option>
+                                    </select>
+
+                                    <br> <br>
+                            <hr><br><br>
+
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h1 class="text-ceneter">Question:</h1>
+                                  <form class="form-group">
+
+
+                                    <h1 class="display-2">Would you say this trip you wanna be a foodie, or stick to a diet and get some excerise?</h1>
+
+
+
+
+                                    Select Your Answer <select name="motivation" id="answers">
+                                      <option value="friend">I'm a foodie, im going to grab some fine cuisine</option>
+                                      <option value="novelty">I waqnt explore and adventure in the great outdoors</option>
+                                      <option value="peerPressure">I dont realy care for either</option>
+                                    </select>
+
+
+
+
+                                               <br> <br>
+                            <hr><br><br>
+
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h1 class="text-ceneter">Question:</h1>
+                                  <form class="form-group">
+
+
+                                    <h1 class="display-2">When you stay somewhere whats more important, artistic & history, or comnfort & ritz?</h1>
+
+
+
+
+                                    Select Your Answer <select name="motivation" id="answers">
+                                      <option value="friend">Artsy and Hip</option>
+                                      <option value="novelty">Put my vacation on the ritz</option>
+                                      <option value="peerPressure">I'm balling on a budget here</option>
+                                    </select>
+
+                                                             <br> <br>
+                            <hr><br><br>
+
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h1 class="text-ceneter">Question:</h1>
+                                  <form class="form-group">
+
+
+                                    <h1 class="display-2">How amny people are you bringing on this trip or is it just Yourself?</h1>
+
+
+
+
+                                    Select Your Answer <select name="motivation" id="answers">
+                                      <option value="friend">Just Me</option>
+                                      <option value="novelty">Im bring one ore two guest</option>
+                                      <option value="peerPressure">Traveling with a group of four or more</option>
+                                    </select>
+
+                                   <br> <br>
+                            <hr><br><br>
+
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h1 class="text-ceneter">Question:</h1>
+                                  <form class="form-group">
+
+
+                                    <h1 class="display-2">What dates are you planning to travel?</h1>
+
+
+
+
+                                   Month <select name="motivation" id="answers">
+                                      <option value="January">January</option>
+                                      <option value="Febuary">Febuary</option>
+                                      <option value="March">March</option>
+                                      <option value="April">April</option>
+                                      <option value="May">May</option>
+                                      <option value="June">June</option>
+                                      <option value="March">July</option>
+                                      <option value="July">August</option>
+                                      <option value="September">September</option>
+                                       <option value="October">October</option>
+                                        <option value="November">November</option>
+                                         <option value="Decmeber">Decmeber</option>
+                                      
+                                    </select>
+
+                                     Trip day start <select name="motivation" id="answers">
+                                      <option value="friend">1</option>
+                                      <option value="friend">2</option>
+                                      <option value="friend">3</option>
+                                      <option value="friend">4</option>
+                                      <option value="friend">5</option>
+                                      <option value="friend">6</option>
+                                      <option value="friend">7</option>
+                                      <option value="friend">8</option>
+                                      <option value="friend">9</option>
+                                      <option value="friend">10</option>
+                                      <option value="friend">11</option>
+                                      <option value="friend">12</option>
+                                      <option value="friend">13</option>
+                                      <option value="friend">14</option>
+                                      <option value="friend">15</option>
+                                      <option value="friend">16</option>
+                                      <option value="friend">17</option>
+                                      <option value="friend">18</option>
+                                      <option value="friend">19</option>
+                                      <option value="friend">20</option>
+                                      <option value="friend">21</option>
+                                      <option value="friend">22</option>
+                                      <option value="friend">23</option>
+                                      <option value="friend">24</option>
+                                      <option value="friend">25</option>
+                                      <option value="friend">26</option>
+                                      <option value="friend">27</option>
+                                      <option value="friend">28</option>
+                                      <option value="friend">29</option>
+                                      <option value="friend">30</option>
+                                      <option value="friend">31</option>
+
+
+
+                                    </select>
+                                     Number of days <select name="motivation" id="answers">
+                                      <option value="1day">1 day</option>
+                                      <option value="2day">2 days</option>
+                                      <option value="3day">3 days</option>
+                                      <option value="4day">4 days</option>
+                                      <option value="5day">5 days</option>
+                                      <option value="6day">6 days</option>
+                                      <option value="7day">7 days</option>
+                                      <option value="8day">8 days</option>
+                                      <option value="9day">9 days</option>
+                                      <option value="10day">10 days</option>
+                                      <option value="11day">11+ days</option>
+
+
+                                    </select>
+
+
+
+
+                                    <br> <br>
+                            <hr><br><br>
+
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h1 class="text-ceneter">Question:</h1>
+                                  <form class="form-group">
+
+
+                                    <h1 class="display-2">What is inportant to have close by in your neighborhood experience?</h1>
+
+
+
+
+                                    Select Your Answer <select name="motivation" id="answers">
+                                      <option value="friend">Stuff to do</option>
+                                      <option value="novelty">stuff to eat</option>
+                                      <option value="peerPressure">public bathrooms</option>
+                                    </select>
+
+
+
+
+                                    {{#each questions}}
+
+
+                                    <div class="container">
+
+
+
+                                      {{this.question}}
+                                      <br>
+
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                    {{/each}}
+                                  </form>
+                                </div>
+
+                                {{!-- <button type="button" class="btn btn-primary btn-lg">Next Question</button> --}}
+                                <div class="col-md-6 offset-md-3">
+                                  <br><br><button type="button" class="btn btn-primary btn-lg text-ceneter"><a href="./listing">Submit
+                                      to see where you are going</a></button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                      <script src="/js/index.js"></script>
