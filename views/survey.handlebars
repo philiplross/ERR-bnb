@@ -1,4 +1,5 @@
 <div id="survey">
+  <div class="text-center">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -9,16 +10,58 @@
 <h1 class="display-2">What is your budget for this trip?</h1>
 
 
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Your Answer
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">$100-$200</a>
-    <a class="dropdown-item" href="#">$200-$500</a>
-    <a class="dropdown-item" href="#">$500+</a>
-  </div>
-</div>
+
+
+     Select Your Budget
+
+        <select name="motivation" id="answers">
+            <option value="friend">$100-$200</option>
+            <option value="novelty">$200-$500</option>
+            <option value="peerPressure">$500+</option>
+       </select>
+
+
+      <br> <br><hr><br><br>
+
+       <div class="container">
+    <div class="row">
+      <div class="col-12">
+       <h1 class="text-ceneter">Question:</h1>
+        <form class="form-group">
+
+
+<h1 class="display-2">"Do you like staying alone, or enjoy the livelyness of a bed and breakfast?</h1>
+
+
+
+
+Select Your Answer
+        <select name="motivation" id="answers">
+            <option value="friend">do I, i live it!</option>
+            <option value="novelty">I hate sharing space withg stranger when im on vacation</option>
+            <option value="peerPressure">I'm indiferant, i dont mind either</option>
+       </select>
+
+
+       <br> <br><hr><br><br>
+
+       <div class="container">
+    <div class="row">
+      <div class="col-12">
+       <h1 class="text-ceneter">Question:</h1>
+        <form class="form-group">
+
+
+<h1 class="display-2">Would you rather wake up to the sights of the ocean or not a deal breaker?</h1>
+
+
+
+
+Slect Answer        <select name="motivation" id="answers">
+            <option value="friend">I love the beach cant be further then a mile away!</option>
+            <option value="novelty">I hate water, not big deal</option>
+            <option value="peerPressure">I'm indiferant, i dont mind either</option>
+       </select>
 
         {{#each questions}}
          
@@ -33,14 +76,7 @@
 
 
 </div>
-        {{!-- following section of drop down answers to moved to handlebars backend
-        <select name="motivation" id="answers">
-            <option value="friend">selection 1</option>
-            <option value="novelty">selection 2</option>
-            <option value="peerPressure">selection 3</option>
-            <option value="confusion">selection 4</option>
-        </select> --}}
-
+       
  
 
         
@@ -52,11 +88,14 @@
         {{/each}}
        </form>
       </div>
-                      <button type="button" class="btn btn-primary btn-lg">Submit to see where you are going</button>
+
+                            {{!-- <button type="button" class="btn btn-primary btn-lg">Next Question</button> --}}
+
+                      <button type="button" class="btn btn-primary btn-lg text-ceneter">Submit to see where you are going</button>
 
     </div>
   </div>
 </div>
-
+</div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
