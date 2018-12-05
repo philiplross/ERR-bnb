@@ -1,24 +1,75 @@
 <div id="home">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-8 offset-2">
+            <div class="col-12">
 
-                <h1>{{listing.title}}</h1>
-                <br>
-                <h4>{{listing.budget}}</h4>
-                <h4>{{listing.dates}}</h4>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-ceneter">Northpark Bungalo</h1>
+    <p class="lead">This cozy 2 bedroom, two bathroom condo 
+      has everything you need and with a touch of class too.</p>
+  </div>
+</div>
 
-                <ul>
-                    <li>{{listing.details}}</li>
-                </ul>
+<br>
 
-                <button type="button" class="btn btn-primary btn-lg" > <script>
-<script src="js/ajax.js"></script>
-                        <{{!-- button ajax code goes here --}}>
+<div class="card-deck text-center">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Trip Cost:</h2>
+      <h3 class="card-text">$243.36</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Dates:</h2>
+      <h3 class="card-text">December 25th-Demeber 31st</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Neighborhood:</h2>
+      <h3 class="card-text">North Park</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div><br>
+
+<div class="card-deck text-center">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Rating:</h2>
+      <h3 class="card-text">4.6</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Rental Type:</h2>
+      <h3 class="card-text">Entire House</h3>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Last Review</h2>
+      <p class="card-text">This place was great! had movies games, 
+        and was next to a ton of great food places and cool places to walk around. 
+        Was clean and neat would recomend for sure!</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div>
 
 
-                </script>Book Now!</button>
-                <button type="button" class="btn btn-secondary btn-lg"><script>
+
+        
+                             <div class="col-md-6 offset-md-3">
+
+                <button type="button" class="btn btn-primary btn-lg text-ceneter" >Book Now!</button>
+                <button type="button" class="btn btn-secondary btn-lg text-center"><script>
 <script src="js/ajax.js"></script>
 
                         {{!-- button ajax code goes here --}}
@@ -28,7 +79,7 @@
 
                 </script>   Don't like this place, see the next!</button>
 
-
+</div>
             </div>
         </div>
     </div>

@@ -1,24 +1,4 @@
-<!-- 
-    <div class="container">
-        <div class="row">
-          <div class="col-8 offset-2">
-            <div class="card mt-4">
-              <div class="card-body">
-                <h5 class="card-title">Example</h5>
-                <p>
-                  <strong>ID</strong>: {{example.id}}</p>
-                <p>
-                <p>
-                  <strong>Text</strong>: {{example.text}}</p>
-                <p>
-                  <strong>Description:</strong> {{example.description}}</p>
-                  <a href="/">← Back To Home</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-       -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,99 +10,68 @@
 </head>
 <body>
 
-
-    <!-- <div id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-8 offset-2">
-              <h1>{{msg}}</h1>
-              <h2>ERR bnb</h2>
-              <p>The premiere travel destination selector. All you need to do in fill out a short survey with your budget and
-                what you like, and the app does the rest.</p>
-              <p>Below please fill in the following questions.</p>
-      
-              <br>
-              <form class="clearfix mb-4" action="POST">
-                <div class="form-group">
-                  <label for="example-text">What is your total budget for this trip?</label><br>
-                  <input type="numbers" id="example-text" class="form-control" aria-describedby="example-text" placeholder="$1-$10000">
-                </div>
-      
-      
-                <div class="form-group">
-                  <label for="example-text">Question 2</label><br>
-                  <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="">
-                </div>
-      
-                
-
-                <div class="form-group">
-                  <label for="example-text">Question 2</label><br>
-                  <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="">
-                </div>
-      
-                
-
-                <div class="form-group">
-                  <label for="example-text">Question 2</label><br>
-                  <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="">
-                </div>
-      
-                <br>
-              
-                <div class="form-check">
-                    <h4>What are some of your favorite things to do when traveling?</h4>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Swimming
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Shopping
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Hiking
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Eating
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Sight Seeing
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Camping
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Gambling
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     Event going
-                    </label>
-                  </div>
-      
-                <button id="submit" class="btn btn-primary float-right">Submit</button>
-              </form>
-      
-      
-      
-      
-<!--       
-              {{!-- <h3>Examples:</h3>
-              <ul id="example-list" class="list-group">
-                {{#each examples}}
-                <li data-id="{{this.id}}" class="list-group-item">
-                  <a href="example/{{this.id}}">{{this.text}}</a>
-                  <button class="btn btn-danger float-right delete">ｘ</button>
-                </li>
-                {{/each}}
-              </ul> --}}
-       -->
+    <div id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+    
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Title Listing</h1>
+        <p class="lead">Lisitng Description</p>
+      </div>
+    </div>
+    
+    <br>
+    
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Budget</h2>
+          <h3 class="card-text">$158.36</h3>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Dates</h2>
+          <h3 class="card-text">December 25th-January 2nd</h3>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Neighborhood</h2>
+          <h3 class="card-text">Kearny Mesa</h3>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div><br>
+    
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Rating</h2>
+          <h3 class="card-text">$158.36</h3>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Roomate Type</h2>
+          <h3 class="card-text">Entire House</h3>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Last Review</h2>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum culpa illo dicta repudiandae voluptatem totam dolor velit, incidunt voluptas ipsum, alias, quo asperiores obcaecati. Velit ipsam dolore iusto officia illo!</p>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+    
       
 
 
@@ -149,9 +98,8 @@
           </div>
         </div>
       </div> -->
-      
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="/js/index.js"></script>
-
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </body>
 </html>

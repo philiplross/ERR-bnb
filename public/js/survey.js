@@ -1,4 +1,4 @@
-var questionsSurvey = ["What is your budget for this trip?", check
+var questionsSurvey = ["What is your budget for this trip?", 
  "Do you like staying alone, or enjoy the livelyness of a bed and breakfast?", 
  "Would you rather wake up to the sights of the ocean or not a deal breaker?", 
 "when traveleing somewhere, whats the first thing you do when you get there?", 

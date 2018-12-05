@@ -1,7 +1,7 @@
-module.exports = function(sequelize, DataTypes) {
-  var questions = sequelize.define("questions", {
-    text: DataTypes.STRING,
-    description: DataTypes.TEXT
-  });
-  return questions;
-};
+module.exports = function(connection, Sequelize) {
+  var questions = connection.define("questions", {
+    text: Sequelize.STRING,
+    description: Sequelize.TEXT
+  })
+  return questions
+}
