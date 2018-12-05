@@ -3,28 +3,58 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-ceneter">Question:</h1>
+
           <form class="form-group">
 
 
-            <h1 class="display-4">What is your budget for this trip?</h1>
+
+            <div class="card w-100">
+              <div class="card-body">
+                <h1 class="text-ceneter">Question:</h1>
+                <h1 class="card-title display-4">What is your budget for this trip?</h1>
+                <h3 class="card-text">Select Your Budget</h3>
+                <select name="budget" id="answers">
+                  <option value="budget1">$100-$200</option>
+                  <option value="budget2">$200-$500</option>
+                  <option value="budget3">$500+</option>
+                </select>
+              </div>
+            </div>
 
 
 
-
+            {{!-- <h1 class="display-4">What is your budget for this trip?</h1>
             <h4> Select Your Budget</h4>
 
             <select name="motivation" id="answers">
               <option value="budget1">$100-$200</option>
               <option value="budget2">$200-$500</option>
               <option value="budget3">$500+</option>
-            </select>
+            </select> --}}
 
 
             <br> <br>
-            <hr><br><br>
+            <br><br>
 
-            <div class="container">
+
+
+            <div class="card w-100">
+              <div class="card-body">
+                <h1 class="text-ceneter">Question:</h1>
+                <h1 class="card-title display-4">Do you like staying alone, or enjoy the livelyness of a bed and
+                  breakfast?</h1>
+                <h3 class="card-text">Select Your Answer</h3>
+                <select name="alone" id="answers">
+                  <option value="alone1">do I, i live it!</option>
+                  <option value="alone2">I hate sharing space withg stranger when im on vacation</option>
+                  <option value="alone3">I'm indiferant, i dont mind either</option>
+                </select>
+              </div>
+            </div>
+
+
+
+            {{!-- <div class="container">
               <div class="row">
                 <div class="col-12">
                   <h1 class="text-ceneter">Question:</h1>
@@ -33,39 +63,51 @@
 
                     <h1 class="display-4">"Do you like staying alone, or enjoy the livelyness of a bed and breakfast?</h1>
 
-
-
-
                     <h4> Select Your Answer</h4>
                     <select name="motivation" id="answers">
                       <option value="alone1">do I, i live it!</option>
                       <option value="alone2">I hate sharing space withg stranger when im on vacation</option>
                       <option value="alone3">I'm indiferant, i dont mind either</option>
-                    </select>
+                    </select> --}}
 
 
                     <br> <br>
-                    <hr><br><br>
+                    <br><br>
 
-                    <div class="container">
+
+
+                    <div class="card w-100">
+                      <div class="card-body">
+                        <h1 class="text-ceneter">Question:</h1>
+                        <h1 class="card-title display-4">Would you rather wake up to the sights of the ocean or not a
+                          dealbreaker?</h1>
+                        <h3 class="card-text">Select Your Answer</h3>
+                        <select name="beach" id="answers">
+                          <option value="beach1">I love the beach cant be further then a mile away!</option>
+                          <option value="beach2">I hate water, not big deal</option>
+                          <option value="beach3">I'm indiferant, i dont mind either</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+
+
+                    {{!-- <div class="container">
                       <div class="row">
                         <div class="col-12">
                           <h1 class="text-ceneter">Question:</h1>
                           <form class="form-group">
 
 
-                            <h1 class="display-4">Would you rather wake up to the sights of the ocean or not a deal
-                              breaker?</h1>
-
-
-
-
+                            <h1 class="display-4">Would you rather wake up to the sights of the ocean or not a
+                              dealbreaker?</h1>
                             <h4> Select Your Answer </h4>
                             <select name="motivation" id="answers">
                               <option value="ocean1">I love the beach cant be further then a mile away!</option>
                               <option value="ocean2">I hate water, not big deal</option>
                               <option value="ocean3">I'm indiferant, i dont mind either</option>
-                            </select>
+                            </select> --}}
 
 
                             <br> <br>
@@ -77,12 +119,8 @@
                                   <h1 class="text-ceneter">Question:</h1>
                                   <form class="form-group">
 
-
                                     <h1 class="display-4">when traveleing somewhere, whats the first thing you do when
                                       you get there?</h1>
-
-
-
                                     <h4> Select Your Answer </h4>
                                     <select name="motivation" id="answers">
                                       <option value="todo1">Get something yummy to eat</option>
@@ -106,7 +144,7 @@
 
 
 
-                                            <h4> Select Your Answer </h4> 
+                                            <h4> Select Your Answer </h4>
                                             <select name="motivation" id="answers">
                                               <option value="foodie1">I'm a foodie, im going to grab some fine cuisine</option>
                                               <option value="foodie2">I want to go explore and adventure in the great
@@ -133,7 +171,7 @@
 
 
 
-                                                    <h4> Select Your Answer </h4>  
+                                                    <h4> Select Your Answer </h4>
                                                     <select name="motivation" id="answers">
                                                       <option value="hip">Artsy and Hip</option>
                                                       <option value="ritz">Put my vacation on the ritz</option>
@@ -156,7 +194,7 @@
 
 
 
-                                                            <h4> Select Your Answer </h4>  
+                                                            <h4> Select Your Answer </h4>
                                                             <select name="motivation" id="answers">
                                                               <option value="people1">Just Me</option>
                                                               <option value="people2">Im bring one ore two guest</option>
@@ -180,8 +218,8 @@
 
 
 
-                                                                   <h4>Month</h4> 
-                                                                   <select name="motivation" id="answers">
+                                                                    <h4>Month</h4>
+                                                                    <select name="motivation" id="answers">
                                                                       <option value="January">January</option>
                                                                       <option value="Febuary">Febuary</option>
                                                                       <option value="March">March</option>
@@ -197,7 +235,7 @@
 
                                                                     </select>
 
-                                                                    <h4>Trip day start</h4> 
+                                                                    <h4>Trip day start</h4>
                                                                     <select name="motivation" id="answers">
                                                                       <option value="date1">1</option>
                                                                       <option value="date2">2</option>
@@ -234,10 +272,10 @@
 
 
                                                                     </select>
-                                                                    
-                                                                    
-                                                                    
-                                                                   <h4> Number of days </h4>
+
+
+
+                                                                    <h4> Number of days </h4>
                                                                     <select name="motivation" id="answers">
                                                                       <option value="1day">1 day</option>
                                                                       <option value="2day">2 days</option>
@@ -275,8 +313,7 @@
 
 
                                                                             <h4>Select Your Answer </h4>
-                                                                            <select name="motivation"
-                                                                              id="answers">
+                                                                            <select name="motivation" id="answers">
                                                                               <option value="friend">Stuff to do</option>
                                                                               <option value="novelty">stuff to eat</option>
                                                                               <option value="peerPressure">public
