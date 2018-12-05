@@ -6,14 +6,25 @@
        
         <form class="form-group">
         {{#each questions}}
-         <h1 class="text ceneter">Question:</h1>
+         <h1 class="text ceneter">Question:!!!!!</h1>
          
          <div class = "container">
-   
+  
     <form method="get">
         <br>
         {{this.question}}
+<br>
 
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   <h3> Select Your Answer</h3>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
         {{!-- following section of drop down answers to moved to handlebars backend
         <select name="motivation" id="answers">
             <option value="friend">selection 1</option>
