@@ -40,7 +40,7 @@ module.exports = function (app) {
     res.json({ message: "" })
   });
 
-  app.get('/tweet', function(req, res) {
+  app.get('/tweet/:neighborhood', function(req, res) {
     var neighborhood = req.params.neighborhood;
     client.get('search/tweets.json?q=nasa', {q: neighborhood}, function(error, tweets, response) {
         if (!error) {
