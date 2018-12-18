@@ -3,283 +3,431 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-ceneter">Question:</h1>
+
           <form class="form-group">
 
 
-            <h1 class="display-2">What is your budget for this trip?</h1>
+
+            <div class="card w-100">
+              <div class="card-body">
+                <h1 class="text-ceneter">Question:</h1>
+                <h1 class="card-title display-4">What is your budget for this trip?</h1>
+                <h3 class="card-text">Select Your Budget</h3>
+                <select name="budget" id="answers">
+                  <option value="budget1">$100-$200</option>
+                  <option value="budget2">$200-$500</option>
+                  <option value="budget3">$500+</option>
+                </select>
+              </div>
+            </div>
 
 
 
-
-            Select Your Budget
+            {{!-- <h1 class="display-4">What is your budget for this trip?</h1>
+            <h4> Select Your Budget</h4>
 
             <select name="motivation" id="answers">
               <option value="budget1">$100-$200</option>
               <option value="budget2">$200-$500</option>
               <option value="budget3">$500+</option>
-            </select>
+            </select> --}}
 
 
             <br> <br>
-            <hr><br><br>
+            <br><br>
 
-            <div class="container">
+
+
+            <div class="card w-100">
+              <div class="card-body">
+                <h1 class="text-ceneter">Question:</h1>
+                <h1 class="card-title display-4">Do you like staying alone, or enjoy the livelyness of a bed and
+                  breakfast?</h1>
+                <h3 class="card-text">Select Your Answer</h3>
+                <select name="alone" id="answers">
+                  <option value="alone1">do I, i live it!</option>
+                  <option value="alone2">I hate sharing space withg stranger when im on vacation</option>
+                  <option value="alone3">I'm indiferant, i dont mind either</option>
+                </select>
+              </div>
+            </div>
+
+
+
+            {{!-- <div class="container">
               <div class="row">
                 <div class="col-12">
                   <h1 class="text-ceneter">Question:</h1>
                   <form class="form-group">
 
 
-                    <h1 class="display-2">"Do you like staying alone, or enjoy the livelyness of a bed and breakfast?</h1>
+                    <h1 class="display-4">"Do you like staying alone, or enjoy the livelyness of a bed and breakfast?</h1>
 
-
-
-
-                    Select Your Answer
+                    <h4> Select Your Answer</h4>
                     <select name="motivation" id="answers">
                       <option value="alone1">do I, i live it!</option>
                       <option value="alone2">I hate sharing space withg stranger when im on vacation</option>
                       <option value="alone3">I'm indiferant, i dont mind either</option>
-                    </select>
+                    </select> --}}
 
 
                     <br> <br>
-                    <hr><br><br>
+                    <br><br>
 
-                    <div class="container">
+
+
+                    <div class="card w-100">
+                      <div class="card-body">
+                        <h1 class="text-ceneter">Question:</h1>
+                        <h1 class="card-title display-4">Would you rather wake up to the sights of the ocean or not a
+                          dealbreaker?</h1>
+                        <h3 class="card-text">Select Your Answer</h3>
+                        <select name="beach" id="answers">
+                          <option value="beach1">I love the beach cant be further then a mile away!</option>
+                          <option value="beach2">I hate water, not big deal</option>
+                          <option value="beach3">I'm indiferant, i dont mind either</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+
+
+                    {{!-- <div class="container">
                       <div class="row">
                         <div class="col-12">
                           <h1 class="text-ceneter">Question:</h1>
                           <form class="form-group">
 
 
-                            <h1 class="display-2">Would you rather wake up to the sights of the ocean or not a deal
-                              breaker?</h1>
-
-
-
-
-                            Select Your Answer <select name="motivation" id="answers">
+                            <h1 class="display-4">Would you rather wake up to the sights of the ocean or not a
+                              dealbreaker?</h1>
+                            <h4> Select Your Answer </h4>
+                            <select name="motivation" id="answers">
                               <option value="ocean1">I love the beach cant be further then a mile away!</option>
                               <option value="ocean2">I hate water, not big deal</option>
                               <option value="ocean3">I'm indiferant, i dont mind either</option>
-                            </select>
+                            </select> --}}
 
 
                             <br> <br>
-                            <hr><br><br>
+                            <br><br>
 
-                            <div class="container">
+
+                            <div class="card w-100">
+                              <div class="card-body">
+                                <h1 class="text-ceneter">Question:</h1>
+                                <h1 class="card-title display-4">when traveleing somewhere, whats the first thing you
+                                  do when
+                                  you get there?</h1>
+                                <h3 class="card-text">Select Your Answer</h3>
+                                <select name="todo" id="answers">
+                                  <option value="todo1">Get something yummy to eat</option>
+                                  <option value="todo2">Take a dip in the ocean</option>
+                                  <option value="todo3">Go shopping</option>
+                                  <option value="todo4">See a movie</option>
+                                  <option value="todo5">just relax and rest</option>
+                                  <option value="todo6">go see a concert</option>
+
+                                </select>
+                              </div>
+                            </div>
+
+
+                            {{!-- old code below --}}
+
+                            {{!-- <div class="container">
                               <div class="row">
                                 <div class="col-12">
                                   <h1 class="text-ceneter">Question:</h1>
                                   <form class="form-group">
 
-
-                                    <h1 class="display-2">when traveleing somewhere, whats the first thing you do when
+                                    <h1 class="display-4">when traveleing somewhere, whats the first thing you do when
                                       you get there?</h1>
-
-
-
-
-                                    Select Your Answer <select name="motivation" id="answers">
+                                    <h4> Select Your Answer </h4>
+                                    <select name="motivation" id="answers">
                                       <option value="todo1">Get something yummy to eat</option>
                                       <option value="todo2">Take a dip in the ocean</option>
                                       <option value="todo3">Go shopping</option>
-                                    </select>
+                                    </select> --}}
 
                                     <br> <br>
-                            <hr><br><br>
-
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-12">
-                                  <h1 class="text-ceneter">Question:</h1>
-                                  <form class="form-group">
+                                    <br><br>
 
 
-                                    <h1 class="display-2">Would you say this trip you wanna be a foodie, or stick to a diet and get some excerise?</h1>
-
-
-
-
-                                    Select Your Answer <select name="motivation" id="answers">
-                                      <option value="foodie1">I'm a foodie, im going to grab some fine cuisine</option>
-                                      <option value="foodie2">I waqnt explore and adventure in the great outdoors</option>
-                                      <option value="foodie3">I dont realy care for either</option>
-                                    </select>
-
-
-
-
-                                               <br> <br>
-                            <hr><br><br>
-
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-12">
-                                  <h1 class="text-ceneter">Question:</h1>
-                                  <form class="form-group">
-
-
-                                    <h1 class="display-2">When you stay somewhere whats more important, artistic & history, or comnfort & ritz?</h1>
-
-
-
-
-                                    Select Your Answer <select name="motivation" id="answers">
-                                      <option value="hip">Artsy and Hip</option>
-                                      <option value="ritz">Put my vacation on the ritz</option>
-                                      <option value="dontCareHip">I'm balling on a budget here</option>
-                                    </select>
-
-                                                             <br> <br>
-                            <hr><br><br>
-
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-12">
-                                  <h1 class="text-ceneter">Question:</h1>
-                                  <form class="form-group">
-
-
-                                    <h1 class="display-2">How amny people are you bringing on this trip or is it just Yourself?</h1>
-
-
-
-
-                                    Select Your Answer <select name="motivation" id="answers">
-                                      <option value="people1">Just Me</option>
-                                      <option value="people2">Im bring one ore two guest</option>
-                                      <option value="people3">Traveling with a group of four or more</option>
-                                    </select>
-
-                                   <br> <br>
-                            <hr><br><br>
-
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-12">
-                                  <h1 class="text-ceneter">Question:</h1>
-                                  <form class="form-group">
-
-
-                                    <h1 class="display-2">What dates are you planning to travel?</h1>
-
-
-
-
-                                   Month <select name="motivation" id="answers">
-                                      <option value="January">January</option>
-                                      <option value="Febuary">Febuary</option>
-                                      <option value="March">March</option>
-                                      <option value="April">April</option>
-                                      <option value="May">May</option>
-                                      <option value="June">June</option>
-                                      <option value="March">July</option>
-                                      <option value="July">August</option>
-                                      <option value="September">September</option>
-                                       <option value="October">October</option>
-                                        <option value="November">November</option>
-                                         <option value="Decmeber">Decmeber</option>
-                                      
-                                    </select>
-
-                                     Trip day start <select name="motivation" id="answers">
-                                      <option value="date1">1</option>
-                                      <option value="date2">2</option>
-                                      <option value="date3">3</option>
-                                      <option value="date4">4</option>
-                                      <option value="date5">5</option>
-                                      <option value="date6">6</option>
-                                      <option value="date7">7</option>
-                                      <option value="date8">8</option>
-                                      <option value="date9">9</option>
-                                      <option value="date10">10</option>
-                                      <option value="date11">11</option>
-                                      <option value="date12">12</option>
-                                      <option value="date13">13</option>
-                                      <option value="date14">14</option>
-                                      <option value="date15">15</option>
-                                      <option value="date16">16</option>
-                                      <option value="date17">17</option>
-                                      <option value="date18">18</option>
-                                      <option value="date19">19</option>
-                                      <option value="date20">20</option>
-                                      <option value="date21">21</option>
-                                      <option value="date22">22</option>
-                                      <option value="date23">23</option>
-                                      <option value="date24">24</option>
-                                      <option value="date25">25</option>
-                                      <option value="date26">26</option>
-                                      <option value="date27">27</option>
-                                      <option value="date28">28</option>
-                                      <option value="date29">29</option>
-                                      <option value="date30">30</option>
-                                      <option value="date31">31</option>
-
-
-
-                                    </select>
-                                     Number of days <select name="motivation" id="answers">
-                                      <option value="1day">1 day</option>
-                                      <option value="2day">2 days</option>
-                                      <option value="3day">3 days</option>
-                                      <option value="4day">4 days</option>
-                                      <option value="5day">5 days</option>
-                                      <option value="6day">6 days</option>
-                                      <option value="7day">7 days</option>
-                                      <option value="8day">8 days</option>
-                                      <option value="9day">9 days</option>
-                                      <option value="10day">10 days</option>
-                                      <option value="11day">11+ days</option>
-
-
-                                    </select>
-
-
-
-
-                                    <br> <br>
-                            <hr><br><br>
-
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-12">
-                                  <h1 class="text-ceneter">Question:</h1>
-                                  <form class="form-group">
-
-
-                                    <h1 class="display-2">What is inportant to have close by in your neighborhood experience?</h1>
-
-
-
-
-                                    Select Your Answer <select name="motivation" id="answers">
-                                      <option value="friend">Stuff to do</option>
-                                      <option value="novelty">stuff to eat</option>
-                                      <option value="peerPressure">public bathrooms</option>
-                                    </select>
-
-
-
-
-                                    {{#each questions}}
-
-
-                                    <div class="container">
-
-
-
-                                      {{this.question}}
-                                      <br>
-
-
-
+                                    <div class="card w-100">
+                                      <div class="card-body">
+                                        <h1 class="text-ceneter">Question:</h1>
+                                        <h1 class="card-title display-4">Would you say this trip you wanna be a foodie,
+                                          or
+                                          stick to a diet and get some excerise?</h1>
+                                        <h3 class="card-text">Select Your Answer</h3>
+                                        <select name="food" id="answers">
+                                          <option value="food1">I'm a foodie, im going to grab some fine cuisine</option>
+                                          <option value="food2">I want to go explore and adventure in the great
+                                            outdoors</option>
+                                          <option value="food3">I dont realy care for either</option>
+                                        </select>
+                                      </div>
                                     </div>
 
 
+                                    {{!-- old code below --}}
+                                    {{!-- <div class="container">
+                                      <div class="row">
+                                        <div class="col-12">
+                                          <h1 class="text-ceneter">Question:</h1>
+                                          <form class="form-group">
+
+
+                                            <h1 class="display-4">Would you say this trip you wanna be a foodie, or
+                                              stick to a diet and get some excerise?</h1>
+
+
+
+
+                                            <h4> Select Your Answer </h4>
+                                            <select name="motivation" id="answers">
+                                              <option value="foodie1">I'm a foodie, im going to grab some fine cuisine</option>
+                                              <option value="foodie2">I want to go explore and adventure in the great
+                                                outdoors</option>
+                                              <option value="foodie3">I dont realy care for either</option>
+                                            </select> --}}
+
+
+
+
+                                            <br> <br>
+                                            <br><br>
+
+
+
+                                            <div class="card w-100">
+                                              <div class="card-body">
+                                                <h1 class="text-ceneter">Question:</h1>
+                                                <h1 class="card-title display-4">When you stay somewhere whats more
+                                                  important,
+                                                  artistic & history, or comnfort & ritz?</h1>
+                                                <h3 class="card-text">Select Your Answer</h3>
+                                                <select name="ritz" id="answers">
+                                                  <option value="ritz1">Artsy and Hip</option>
+                                                  <option value="ritz2">Put my vacation on the ritz</option>
+                                                  <option value="ritz3">I'm balling on a budget here</option>
+                                                </select>
+                                              </div>
+                                            </div>
+
+
+
+                                            {{!-- old code below --}}
+                                            {{!-- <div class="container">
+                                              <div class="row">
+                                                <div class="col-12">
+                                                  <h1 class="text-ceneter">Question:</h1>
+                                                  <form class="form-group">
+                                                    <h1 class="display-4">When you stay somewhere whats more important,
+                                                      artistic & history, or comnfort & ritz?</h1>
+                                                    <h4> Select Your Answer </h4>
+                                                    <select name="motivation" id="answers">
+                                                      <option value="hip">Artsy and Hip</option>
+                                                      <option value="ritz">Put my vacation on the ritz</option>
+                                                      <option value="dontCareHip">I'm balling on a budget here</option>
+                                                    </select> --}}
+
+                                                    <br> <br>
+                                                    <br><br>
+
+                                                    <div class="card w-100">
+                                                      <div class="card-body">
+                                                        <h1 class="text-ceneter">Question:</h1>
+                                                        <h1 class="card-title display-4">How amny people are you
+                                                          bringing on
+                                                          this trip or is it just Yourself?</h1>
+                                                        <h3 class="card-text">Select Your Answer</h3>
+                                                        <select name="guest" id="answers">
+                                                          <option value="guest1">Just Me</option>
+                                                          <option value="guest2">Im bring one ore two guest</option>
+                                                          <option value="guest3">Traveling with a group of four or
+                                                            more</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+
+
+
+                                                    {{!-- <div class="container">
+                                                      <div class="row">
+                                                        <div class="col-12">
+                                                          <h1 class="text-ceneter">Question:</h1>
+                                                          <form class="form-group">
+                                                            <h1 class="display-4">How amny people are you bringing on
+                                                              this trip or is it just Yourself?</h1>
+                                                            <h4> Select Your Answer </h4>
+                                                            <select name="motivation" id="answers">
+                                                              <option value="people1">Just Me</option>
+                                                              <option value="people2">Im bring one ore two guest</option>
+                                                              <option value="people3">Traveling with a group of four or
+                                                                more</option>
+                                                            </select> --}}
+
+                                                            <br> <br>
+                                                            <br><br>
+
+
+                                                            <div class="card w-100">
+                                                              <div class="card-body">
+                                                                <h1 class="text-ceneter">Question:</h1>
+                                                                <h1 class="card-title display-4"> What dates are you
+                                                                  planning to travel?</h1>
+                                                                <h3 class="card-text">Select
+                                                                  the month</h3>
+
+
+                                                                {{!-- <div class="container">
+                                                                  <div class="row">
+                                                                    <div class="col-12">
+                                                                      <h1 class="text-ceneter">Question:</h1>
+                                                                      <form class="form-group">
+                                                                        <h1 class="display-4">What dates are you
+                                                                          planning
+                                                                          to travel?</h1>
+                                                                        <h4>Month</h4> --}}
+
+                                                                        <select name="motivation" id="answers">
+                                                                          <option value="January">January</option>
+                                                                          <option value="Febuary">Febuary</option>
+                                                                          <option value="March">March</option>
+                                                                          <option value="April">April</option>
+                                                                          <option value="May">May</option>
+                                                                          <option value="June">June</option>
+                                                                          <option value="March">July</option>
+                                                                          <option value="July">August</option>
+                                                                          <option value="September">September</option>
+                                                                          <option value="October">October</option>
+                                                                          <option value="November">November</option>
+                                                                          <option value="Decmeber">Decmeber</option>
+
+                                                                        </select>
+
+                                                                        <h4>Trip day start</h4>
+                                                                        <select name="motivation" id="answers">
+                                                                          <option value="date1">1</option>
+                                                                          <option value="date2">2</option>
+                                                                          <option value="date3">3</option>
+                                                                          <option value="date4">4</option>
+                                                                          <option value="date5">5</option>
+                                                                          <option value="date6">6</option>
+                                                                          <option value="date7">7</option>
+                                                                          <option value="date8">8</option>
+                                                                          <option value="date9">9</option>
+                                                                          <option value="date10">10</option>
+                                                                          <option value="date11">11</option>
+                                                                          <option value="date12">12</option>
+                                                                          <option value="date13">13</option>
+                                                                          <option value="date14">14</option>
+                                                                          <option value="date15">15</option>
+                                                                          <option value="date16">16</option>
+                                                                          <option value="date17">17</option>
+                                                                          <option value="date18">18</option>
+                                                                          <option value="date19">19</option>
+                                                                          <option value="date20">20</option>
+                                                                          <option value="date21">21</option>
+                                                                          <option value="date22">22</option>
+                                                                          <option value="date23">23</option>
+                                                                          <option value="date24">24</option>
+                                                                          <option value="date25">25</option>
+                                                                          <option value="date26">26</option>
+                                                                          <option value="date27">27</option>
+                                                                          <option value="date28">28</option>
+                                                                          <option value="date29">29</option>
+                                                                          <option value="date30">30</option>
+                                                                          <option value="date31">31</option>
+
+
+
+                                                                        </select>
+
+
+
+                                                                        <h4> Number of days </h4>
+                                                                        <select name="motivation" id="answers">
+                                                                          <option value="1day">1 day</option>
+                                                                          <option value="2day">2 days</option>
+                                                                          <option value="3day">3 days</option>
+                                                                          <option value="4day">4 days</option>
+                                                                          <option value="5day">5 days</option>
+                                                                          <option value="6day">6 days</option>
+                                                                          <option value="7day">7 days</option>
+                                                                          <option value="8day">8 days</option>
+                                                                          <option value="9day">9 days</option>
+                                                                          <option value="10day">10 days</option>
+                                                                          <option value="11day">11+ days</option>
+
+
+                                                                        </select>
+
+                                                                    </div>
+                                                                    </div>
+
+
+                                                                    <br> <br>
+                                                                    <br><br>
+
+
+                                                                    <div class="card w-100">
+                                                                      <div class="card-body">
+                                                                        <h1 class="text-ceneter">Question:</h1>
+                                                                        <h1 class="card-title display-4">What is
+                                                                          important to have close by in your
+                                                                          neighborhood experience?</h1> <h3 class="card-text">Select
+                                                                          Your Answer</h3>
+                                                                          <select name="guest" id="answers">
+                                                                            <option value="guest1">Stuff to do</option>
+                                                                            <option value="guest2">stuff to
+                                                                              eat</option>
+                                                                            <option value="guest3">public
+                                                                              bathrooms</option>
+                                                                          </select>
+                                                                      </div>
+                                                                    </div>
+
+
+
+                                                                    {{!-- <div class="container">
+                                                                      <div class="row">
+                                                                        <div class="col-12">
+                                                                          <h1 class="text-ceneter">Question:</h1>
+                                                                          <form class="form-group">
+
+                                                                            <h1 class="display-4">What is
+                                                                              inportant to
+                                                                              have close by in your neighborhood
+                                                                              experience?</h1>
+                                                                            <h4>Select Your Answer </h4>
+                                                                            <select name="motivation" id="answers">
+                                                                              <option value="friend">Stuff to do</option>
+                                                                              <option value="novelty">stuff to
+                                                                                eat</option>
+                                                                              <option value="peerPressure">public
+                                                                                bathrooms</option>
+                                                                            </select> --}}
+
+
+
+
+                                                                            {{#each questions}}
+
+
+                                                                            <div class="container">
+
+
+
+                                                                              {{this.question}}
+                                                                              <br>
+
+
+
+                                                                            </div>
 
 
 
@@ -287,18 +435,22 @@
 
 
 
-                                    {{/each}}
-                                  </form>
-                                </div>
 
-                                {{!-- <button type="button" class="btn btn-primary btn-lg">Next Question</button> --}}
-                                <div class="col-md-6 offset-md-3">
-                                  <br><br><button type="button" class="btn btn-primary btn-lg text-ceneter"><a href="./listing">Submit
-                                      to see where you are going</a></button>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
-                      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                      <script src="/js/index.js"></script>
+
+                                                                            {{/each}}
+                                                                          </form>
+                                                                        </div>
+
+                                                                        {{!-- <button type="button" class="btn btn-primary btn-lg">Next
+                                                                          Question</button> --}}
+                                                                        <div class="col-md-6 offset-md-3">
+                                                                          <br><br><button type="button" class="btn btn-primary btn-lg text-ceneter"><a
+                                                                              href="./listing">Submit
+                                                                              to see where you are going</a></button>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                                                                <script src="/js/index.js"></script>
